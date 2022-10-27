@@ -1,0 +1,31 @@
+* {
+    margin: auto;
+    padding: 10px;
+}
+
+body {
+    background: linear-gradient(90deg, rgba(223,96,173,1) 35%, rgba(0,212,255,1) 100%);
+}
+.header {
+    text-align: center;
+    max-width: fit-content;
+    background: white;
+    border: 0.3rem solid;
+    border-radius: 1rem;
+}
+.players {
+    display: flex;
+}
+input {
+    border-radius: .5rem;
+}
+.gameCount {
+    text-align: center;
+    max-width: fit-content;
+}
+button {
+    border-radius: 1rem;
+}
+button:hover {
+    cursor: pointer;
+}
