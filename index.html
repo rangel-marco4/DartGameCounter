@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dart Game Counter</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="script.js" ></script>
 </head>
 <body>
     <div class="header">
@@ -14,23 +15,46 @@
         <p>Start by entering the two players names and just keep entering your values</p>
         <p>to keep track of your total score and the remaining value you need to win!</p>
     </div>
+    <div class="gameCount" id="GameCount">
+        <h3>How many points will you be playing to?</h3>
+        <button type="button" id="fiveHundred" onclick="setGamePoints(500)">500 Points</button>
+        <button type="button" id="twoSeventy" onclick="setGamePoints(270)">270 Points</button>
+    </div>
     <div class="players">
         <div class="player1">
             <h3>Player 1:</h3>
-            <input type="text" id="player1" placeholder="Enter Name">
+            <input type="text" id="playerOne" placeholder="Enter Name">
+            <button id="firstPlayer" onclick="setFirstName()">Enter</button>
         </div>
         <div class="player2">
             <h3>Player 2:</h3>
-            <input type="text" id="player1" placeholder="Enter Name">
+            <input type="text" id="playerTwo" placeholder="Enter Name">
+            <button id="secondPlayer" onclick="setSecondName()">Enter</button>
+        </div>
+    </div>
+
+    <div class="playerStats">
+        <div class="firstPlayer" id="showDiv1">
+            <div id="setFirst"></div>
+            <div id="playerOneStats" class="firstPlayerStats">
+                <input type="text" id="dart1" placeholder="First Value">
+                <input type="text" id="dart2" placeholder="Second Value">
+                <input type="text" id="dart3" placeholder="Third Value">
+                <button id="btn1">Calculate</button>
+            </div>
+        </div>
+        <div class="secondPlayer" id="showDiv2">
+            <div id="setSecond"></div>
+            <div id="playerTwoStats" class="secondPlayerStats">
+                <input type="text" id="dart4" placeholder="First Value">
+                <input type="text" id="dart5" placeholder="Second Value">
+                <input type="text" id="dart6" placeholder="Third Value">
+                <button id="btn2">Calculate</button>
+            </div>
         </div>
         
     </div>
-
-    <div class="gameCount">
-        <h3>How many points will you be playing to?</h3>
-        <button type="button" id="fiveHundred">500 Points</button>
-        <button type="button" id="twoSeventy">270 Points</button>
-    </div>
     
+
 </body>
 </html>

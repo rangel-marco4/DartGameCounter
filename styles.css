@@ -29,3 +29,19 @@ button {
 button:hover {
     cursor: pointer;
 }
+button:active {
+    background: gray;
+}
+
+.playerStats {
+    display: flex;
+    max-width: fit-content;
+    margin: auto;
+    align-items: center;
+}
+.firstPlayer {
+    display: none;
+}
+.secondPlayer {
+    display: none;
+}
