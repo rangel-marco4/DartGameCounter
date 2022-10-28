@@ -33,8 +33,17 @@ button:active {
     background: gray;
 }
 
-.playerStats {
-    display: flex;
+#setPlayerNames {
+    display: none;
+}
+
+#resetDartValues {
+    display: none;
+}
+
+
+.playerDiv {
+    display: none;
     max-width: fit-content;
     margin: auto;
     align-items: center;
@@ -43,5 +52,9 @@ button:active {
     display: none;
 }
 .secondPlayer {
+    display: none;
+}
+
+.scoreDiv {
     display: none;
 }

@@ -24,23 +24,21 @@
         <div class="player1">
             <h3>Player 1:</h3>
             <input type="text" id="playerOne" placeholder="Enter Name">
-            <button id="firstPlayer" onclick="setFirstName()">Enter</button>
         </div>
         <div class="player2">
             <h3>Player 2:</h3>
             <input type="text" id="playerTwo" placeholder="Enter Name">
-            <button id="secondPlayer" onclick="setSecondName()">Enter</button>
         </div>
+        <button id="setPlayerNames" onclick="setNames()">Enter</button>
     </div>
 
-    <div class="playerStats">
+    <div class="playerDiv" id="playersDiv">
         <div class="firstPlayer" id="showDiv1">
             <div id="setFirst"></div>
             <div id="playerOneStats" class="firstPlayerStats">
                 <input type="text" id="dart1" placeholder="First Value">
                 <input type="text" id="dart2" placeholder="Second Value">
                 <input type="text" id="dart3" placeholder="Third Value">
-                <button id="btn1">Calculate</button>
             </div>
         </div>
         <div class="secondPlayer" id="showDiv2">
@@ -49,12 +47,14 @@
                 <input type="text" id="dart4" placeholder="First Value">
                 <input type="text" id="dart5" placeholder="Second Value">
                 <input type="text" id="dart6" placeholder="Third Value">
-                <button id="btn2">Calculate</button>
             </div>
         </div>
-        
+        <button id="calPoints" onclick="calculatePoints()">Calculate</button>
+        <button id="resetDartValues" onclick="clearDarts()">Clear</button>
     </div>
-    
+    <div class="scoreDiv" id="scores">
+
+    </div>
 
 </body>
 </html>
